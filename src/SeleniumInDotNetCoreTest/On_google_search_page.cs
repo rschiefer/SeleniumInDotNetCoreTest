@@ -15,7 +15,7 @@ namespace SeleniumInDotNetCoreTest
         public On_google_search_page()
         {
             var capabilities = DesiredCapabilities.InternetExplorer();
-            _driver = new RemoteWebDriver(new Uri("http://localhost:5555"), capabilities);
+            _driver = new RemoteWebDriver(new Uri("http://192.168.99.1:5555"), capabilities);
         }
 
         public void Dispose()
